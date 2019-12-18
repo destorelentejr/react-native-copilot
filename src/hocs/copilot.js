@@ -178,7 +178,8 @@ const copilot = ({
               {...this.props}
               start={this.start}
               currentStep={this.state.currentStep}
-              visible={this.state.visible}
+              visible={this.state.visible} 
+              steps={this.state.steps}
               copilotEvents={this.eventEmitter}
             />
             <CopilotModal
@@ -186,10 +187,14 @@ const copilot = ({
               prev={this.prev}
               stop={this.stop}
               visible={this.state.visible}
+              registerStep={this.registerStep}
+              unregisterStep={this.unregisterStep}
+              setVisibility={this.setVisibility}
               isFirstStep={this.isFirstStep()}
               isLastStep={this.isLastStep()}
               currentStepNumber={this.getStepNumber()}
               currentStep={this.state.currentStep}
+              steps={this.state.steps}
               labels={labels}
               stepNumberComponent={stepNumberComponent}
               tooltipComponent={tooltipComponent}

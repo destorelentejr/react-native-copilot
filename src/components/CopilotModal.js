@@ -276,6 +276,10 @@ class CopilotModal extends Component<Props, State> {
           isFirstStep={this.props.isFirstStep}
           isLastStep={this.props.isLastStep}
           currentStep={this.props.currentStep}
+          steps={this.props.steps}
+          setVisibility={this.props.setVisibility}
+          registerStep={this.props.registerStep}
+          unregisterStep={this.props.unregisterStep}
           handleNext={this.handleNext}
           handlePrev={this.handlePrev}
           handleStop={this.handleStop}
